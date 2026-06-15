@@ -3,8 +3,7 @@ import Button from "@/components/Button";
 import CheckList from "@/components/CheckList";
 import Search from "@/components/Search";
 import Image from "next/image";
-import todoIcon from "@/assets/imgs/todo.svg";
-import doneIcon from "@/assets/imgs/done.svg";
+
 import { useEffect, useState } from "react";
 import ItemList from "@/components/ItemList";
 
@@ -29,14 +28,8 @@ export default function Home() {
     <div>
       <Search setItems={setItems} />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-        <section className="flex flex-col gap-2">
-          <Image src={todoIcon} alt="todo" width={101} height={36} />
-          <ItemList items={todoItems} setItems={setItems} />
-        </section>
-        <section className="flex flex-col gap-2">
-          <Image src={doneIcon} alt="done" width={101} height={36} />
-          <ItemList items={doneItems} setItems={setItems} />
-        </section>
+        <ItemList items={todoItems} setItems={setItems} type="todo" />
+        <ItemList items={doneItems} setItems={setItems} type="done" />
       </div>
     </div>
   );
