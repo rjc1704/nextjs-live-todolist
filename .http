@@ -1,0 +1,7 @@
+PATCH https://assignment-todolist-api.vercel.app/api/react-todo-live/items/10590
+Content-Type: application/json
+
+{
+  "name": "거의끝나지않았는가!!",
+  "isCompleted": true
+}

@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
+/* ==========================================
+   Design Tokens
+   ========================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Slate */
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+
+  --gray-50: #f9fafb;
+
+  /* Violet */
+  --violet-100: #ede9fe;
+  --violet-600: #7c3aed;
+
+  /* Rose */
+  --rose-500: #f43f5e;
+
+  /* Lime */
+  --lime-300: #bef264;
+
+  /* Amber */
+  --amber-800: #92400e;
 }
+
+/* ==========================================
+   Tailwind Theme Mapping
+   ========================================== */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Slate */
+  --color-slate-100: var(--slate-100);
+  --color-slate-200: var(--slate-200);
+  --color-slate-300: var(--slate-300);
+  --color-slate-400: var(--slate-400);
+  --color-slate-500: var(--slate-500);
+  --color-slate-800: var(--slate-800);
+  --color-slate-900: var(--slate-900);
+
+  /* Violet */
+  --color-violet-100: var(--violet-100);
+  --color-violet-600: var(--violet-600);
+
+  /* Rose */
+  --color-rose-500: var(--rose-500);
+
+  /* Lime */
+  --color-lime-300: var(--lime-300);
+
+  /* Amber */
+  --color-amber-800: var(--amber-800);
+
+  --color-background: var(--gray-50);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@theme {
+  /* Breakpoints */
+  --breakpoint-md: 744px; /* 태블릿 */
+  --breakpoint-lg: 1200px;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Typography */
+  --text-sm: 16px;
+  --text-sm-line-height: 1;
+  --text-sm-font-weight: 400;
+
+  --text-md: 16px;
+  --text-md-line-height: 1;
+  --text-md-font-weight: 700;
+
+  --text-lg: 16px;
+  --text-lg-line-height: 1;
+  --text-lg-font-weight: 800;
+
+  --text-xl: 18px;
+  --text-xl-line-height: 1;
+  --text-xl-font-weight: 700;
+
+  --text-2xl: 20px;
+  --text-2xl-line-height: 1;
+  --text-2xl-font-weight: 700;
 }
