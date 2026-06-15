@@ -1,10 +1,4 @@
-import localFont from "next/font/local";
 import "./globals.css";
-import GNB from "@/components/GNB";
-
-const nanumSquareNeo = localFont({
-  src: "../assets/fonts/NanumSquareNeo-Variable.ttf",
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -13,12 +7,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko" className={`${nanumSquareNeo.className} antialiased`}>
-      <body className="min-h-full flex flex-col h-full  bg-background">
-        <GNB />
-        <main className="w-full max-w-[1200px] mx-auto px-4 md:px-5 lg:px-0">
-          {children}
-        </main>
+    <html lang="en" className={`antialiased`}>
+      <body>
+        <main>{children}</main>
       </body>
     </html>
   );
