@@ -67,22 +67,22 @@
 
   /* Typography */
   --text-sm: 16px;
-  --text-sm-line-height: 1;
-  --text-sm-font-weight: 400;
+  --text-sm--line-height: 1;
+  --text-sm--font-weight: 400;
 
   --text-md: 16px;
-  --text-md-line-height: 1;
-  --text-md-font-weight: 700;
+  --text-md--line-height: 1;
+  --text-md--font-weight: 700;
 
   --text-lg: 16px;
-  --text-lg-line-height: 1;
-  --text-lg-font-weight: 800;
+  --text-lg--line-height: 1;
+  --text-lg--font-weight: 800;
 
   --text-xl: 18px;
-  --text-xl-line-height: 1;
-  --text-xl-font-weight: 700;
+  --text-xl--line-height: 1;
+  --text-xl--font-weight: 700;
 
   --text-2xl: 20px;
-  --text-2xl-line-height: 1;
-  --text-2xl-font-weight: 700;
+  --text-2xl--line-height: 1;
+  --text-2xl--font-weight: 700;
 }
