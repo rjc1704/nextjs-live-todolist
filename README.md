@@ -3,6 +3,7 @@
 코드잇 단기심화 과정 지원자 과제 시안을 기반으로 한 React 투두리스트 라이브코딩 자료입니다.
 각 단계는 누적 브랜치로 정리되어 있습니다.
 
+- 레퍼런스 웹사이트: https://react-live-todolist.vercel.app/
 - API 문서: https://assignment-todolist-api.vercel.app/docs/
 - Figma: https://www.figma.com/design/zcM3VfCNbtiqt5aLhlv4sV/
 
